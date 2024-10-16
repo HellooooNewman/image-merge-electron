@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Image Merger</title>
+</head>
+<body>
+    <div id="dropArea" class="drop-area">Drag and drop your images here</div>
+    <span>
+      <button id="selectFilesButton">Select Files</button>
+      <button id="mergeButton">Merge Images</button>
+    </span>
+    <div id="message"></div>
+    
+    <!-- Image previews container -->
+    <div class="image-container">
+      <div>
+        <h3>Before Image</h3>
+        <img id="beforeImage"
+             src=""
+             alt="Before Image"
+             style="display:none;">
+      </div>
+      <div>
+        <h3>After Image</h3>
+        <img id="afterImage"
+             src=""
+             alt="After Image"
+             style="display:none;">
+      </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
